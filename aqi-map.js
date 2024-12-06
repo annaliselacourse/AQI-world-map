@@ -1,4 +1,4 @@
-d3.csv("./data/global-air-pollution-dataset.csv").then(data => {
+d3.csv("global-air-pollution-dataset.csv").then(data => {
   const countryData = {};
   data.forEach(d => {
       const country = d["Country"];

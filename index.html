@@ -9,71 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Public+Sans&display=swap" rel="stylesheet">
   </head>
   <body>
-    <h1>Explore Environmental Impact Visualizations</h1>
-
     <!-- Visualization Containers -->
-    <p><i>Environmental sustainability is essential for ensuring the long-term health and vitality of our planet, enabling current and future generations to thrive. It focuses on preserving natural resources, reducing pollution, and maintaining ecological balance in the face of growing challenges. Human activities such as deforestation, industrialization, and excessive reliance on fossil fuels have significantly altered ecosystems, leading to climate change, loss of biodiversity, and resource depletion. Meanwhile, factors like rapid urbanization and unsustainable agricultural practices exacerbate these issues, placing immense pressure on the environment. Addressing these challenges requires a collective commitment to sustainable practices, innovative solutions, and global cooperation to restore harmony between human progress and nature.</i></p>
-    <br>
-    <br>
     <p><i>The visualization provides a global representation of Air Quality Index (AQI) values for countries around the world. Each country is color-coded to reflect its AQI category, with gradients ranging from "Good" to "Hazardous" based on air quality levels. By hovering the mouse over a specific country, users can view its precise AQI value, offering an interactive and detailed exploration of global air quality patterns.</i></p>
     <p><i>The Air Quality Index (AQI) is a critical measure of air pollution and its potential impact on human health. It translates complex air quality data into a simple scale that categorizes conditions from "Good" to "Hazardous." High AQI values indicate unhealthy air that can cause respiratory issues, aggravate chronic diseases, and increase health risks for sensitive populations such as children and the elderly. Monitoring AQI helps individuals and policymakers make informed decisions to protect public health and implement measures to improve air quality globally.</i></p>
     <div id="viz1" class="visualization active">
       <div id="tooltip" style="position: absolute; visibility: hidden; background: rgba(0, 0, 0, 0.7); color: white; padding: 10px; border-radius: 5px; pointer-events: none;"></div>
       <div id="map"></div>
-        <h2>Air Quality Index (2024)</h2>
+      <h2>Air Quality Index (2024)</h2>
     </div>
-    <p><i>"Long story blah blah blah"</i></p>
-    <div id="viz2" class="visualization">
-      <canvas id="viz2Canvas"></canvas>
-        <div id="legend">
-            <h2>CO2 Emission Sources</h2>
-            <ul>
-                <li style="color: #ff5733;">Electricity & Heat (31%)</li>
-                <li style="color: #33ff57;">Agriculture (11%)</li>
-                <li style="color: #3375ff;">Transportation (15%)</li>
-                <li style="color: #ff33a6;">Forestry (6%)</li>
-                <li style="color: #ff9933;">Manufacturing (12%)</li>
-            </ul>
-        </div>
+    <div class="tooltip"></div>
     </div>
-    <p><i>"Long story blah blah blah"</i></p>
-    <div id="viz3" class="visualization">
-      <div id="legend">
-        <h3>Deforestation</h3>
-      </div>
-        <div id="deforestation_circular_div">
-          <svg id="deforestation_svg"></svg>
-        </div>
-        <div id="button_and_scales">
-          <div id="color_scales"></div>
-          <button id="year" class="nextYear">Next Year</button>
-        </div>
-        </div>
-    </div>
-    <p><i>"Long story blah blah blah"</i></p>
-    <div id="viz4" class="visualization">
-      <h1>Global Energy Consumption Trends</h1>
-      <div id="checkboxes">
-        <label><input type="checkbox" value="Africa"> Africa</label><br>
-        <label><input type="checkbox" value="Asia"> Asia</label><br>
-        <label><input type="checkbox" value="Europe"> Europe</label><br>
-        <label><input type="checkbox" value="North America"> North America</label><br>
-        <label><input type="checkbox" value="South America"> South America</label><br>
-        <label><input type="checkbox" value="Independent"> Independent</label><br>
-        <label><input type="checkbox" value="Middle East"> Middle East</label>
-      </div>
-      <div id="line_chart"></div>
-      <div class="tooltip"></div>
-    </div>
-    <p><i>"Long story blah blah blah"</i></p>
-    <div id="viz5" class="visualization"></div>
-    <script src="./scripts/script.js"></script>
-    <script src="./scripts/aqi-map.js"></script>
+    <script src="aqi-map.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-    <script src="./scripts/co2-sources-viz.js"></script>
-    <script src="./scripts/deforestationBarChart.js"></script>
-    <script src="three/examples/js/renderers/CSS2DRenderer.js"></script>
-    <script src="./scripts/linechart.js"></script>
-    <script src="./scripts/renewable.js"></script>
   </body>
 </html>
